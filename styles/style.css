@@ -7,6 +7,15 @@ ul a {
     color: grey;
 }
 
+ul a:active {
+    color: black;
+}
+
+ul a:hover {
+    color: black;
+}
+
+
 nav li {
     margin-left: 0px;
     margin-right: 0px;
@@ -38,6 +47,11 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 200px;
+}
+
+.nav-current{
+    color: black;
+
 }
 
 
@@ -121,8 +135,7 @@ p {
     padding-bottom: 500px;
     display: float;
     margin-right: 200px;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .work-text{
@@ -337,4 +350,57 @@ footer li{
 }
 .scroll-button a{
     text-align: center;
+}
+
+
+/*about*/
+
+.about {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.about-img{
+    width: 35%;
+    float: left;
+    vertical-align: middle;
+    margin-top: 150px;
+}
+
+.about-text{
+    margin-top: 150px;
+    width: 60%;
+    float: right;
+   font-family: 'Inter', sans-serif;
+   color: black;
+
+}
+
+.about-text h1{
+    display: inline-block;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-text-2{
+    padding-top: 550px;
+    font-family: 'Inter', sans-serif;
+}
+
+.blue{
+    color: #0f4c81;
+    font-weight: 500;
+}
+
+.red{
+    color: #B31B1B;
+    font-weight: 400;
+}
+
+.tab-2 {
+    margin-top: -30px;
+    margin-left: 30px;
+}
+ 
+a{
+    color: black;
 }
