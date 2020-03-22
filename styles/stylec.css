@@ -57,6 +57,12 @@
     animation-fill-mode: both;
 }
 
+.cssanimation2, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+
 /**
  * cssanimation.css
  * https://www.cssanimatio.io
@@ -153,54 +159,58 @@ p {
 
 /* hi! */
 #hi {
-    height: 70vh;
-    margin-top: 250px;
+    margin-top: 280px;
   /*  margin-left: 100px;
     margin-right: 100px;*/
-   text-align: center;
+  /* text-align: center;*/
+   margin-bottom: 0px;
+   margin-left: 200px;
+   margin-right: 200px;
 }
-
 
 
 #me {
-    width: 80px;
+    width: 100px;
     height: auto;
-   text-align: center;
+  /* text-align: center;*/
   /*display: inline-block;*/
-  display: block;
-  margin-right: auto;
+  /*display: block;
+  margin-left: 48%;
+  margin-right: auto;*/
+  float:left;
     /*vertical-align: middle;*/
-    margin-top: -50px;
+    margin-top: -10px;
     margin-bottom: 20px;
-    margin-left: 26%;
-  transform: rotateY(180deg) rotate(-10deg);
-
+    margin-right: 30px;
+     transform: rotateY(180deg) rotate(-10deg);
 }
+
 
 #jessie {
     font-weight: 600;
     color: black;
-    font-size: 30pt;
+    font-size: 25pt;
+    padding-bottom: 5px;
 }
 
 #hi-h1{
     padding-bottom: 5px;
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 10pt;
 
 }
 
 .hi-desc{
-    width: 50%;
-    margin-left: 30px;
-    font-size: 25pt;
+    width: 85%;
+  /*  margin-left: 30px;*/
+    font-size: 18pt;
     margin-bottom: 0px;
-    font-weight: 50;
     font-weight: 400;
-    color: #8d8d8d;   
-    display: inline-block;
-    text-align: left;
+   /*color: #8d8d8d;  */
+   color: grey;
+    /*display: inline-block;*/
 }
+
 
 .button-box{
    /* margin-top: -10px;*/
@@ -235,11 +245,13 @@ p {
 /*work*/
 #works{
     height: 100px;
+   /* margin-bottom: 50px;*/
+   margin-bottom: 100px;
 }
 
 .work {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #projects{
@@ -250,11 +262,75 @@ p {
 }
 
 .work-image{
-    width: 30%;
-    margin-right: 3%;
+    /*width: 45%;*/
+    width: 100%;
+    margin-right: 4px;
     margin-left: 0px;
     padding: 0px;
+    display: inline-block;
 }
+
+
+.work-box {
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    float:left;
+    margin-right: 3%;
+}
+
+.work-box img {
+    float:left;
+}
+
+.work-box div{
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    color: white;
+
+}
+
+.work-text {
+    padding-top: 28%;
+    font-weight: 600;
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+}
+
+.work-box:hover{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.work-box:hover img{
+    opacity: 0.8;
+}
+
+.work-box:hover div {
+    visibility: visible;
+}
+
+
+.font-small {
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+/* copy and paste it for indiv boxes */
+.cure-box:hover div {
+    background-color: #4e598c;
+}
+
+
+.insta-box:hover div{
+    background-color: #f2f3f5;
+    color: black;
+}
+
 /*works-before
 .work {
     margin-left: 100px;
@@ -313,6 +389,47 @@ p {
 */
 
 /*footer*/
+/*nav bar*/
+
+/* Add a black background color to the top navigation */
+footer {
+    font-family:  "Helvetica Neue";
+    margin-top: 500px;
+    bottom: 0;
+    padding-left: 100px;
+  /* background-color: #f2f3f5;*/
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/* Style the links inside the navigation bar */
+footer a {
+  color: gray;
+ text-decoration: none;
+ margin-left: 20px;
+ 
+
+}
+
+footer p {
+    display: inline-block;
+    width: 200px; 
+    font-size: 10pt;
+
+}
+
+
+/* Right-aligned section inside the top navigation */
+.footer-right {
+  float: right;
+  margin-right: 120px;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 10pt;
+
+}
+
+/* old footer 
 footer {
     width: 100%;
     height: 150px;
@@ -323,6 +440,7 @@ footer {
     margin-top: 20px;
     display: block;
     margin-top: 100px;
+    margin-top: 500px;
 }
 
 footer ul {
@@ -344,6 +462,7 @@ footer li{
     font-size: 10pt;
 }
 
+*/
 
 /*works specific page*/
 .spec-title-img{
@@ -492,27 +611,54 @@ footer li{
 .about {
     margin-left: 200px;
     margin-right: 200px;
+    /*margin-top: 280px;*/
+    margin-top: 200px;
 }
+
 .about-img{
-    width: 35%;
+    width: 30%;
     float: left;
+    margin-top: 20px;
     vertical-align: middle;
-    margin-top: 150px;
+    margin-left: 200px;
+}
+
+#me2 {
+    width: 100px;
+    height: auto;
+  /* text-align: center;*/
+  /*display: inline-block;*/
+  /*display: block;
+  margin-left: 48%;
+  margin-right: auto;*/
+  float:left;
+    /*vertical-align: middle;*/
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.about-desc{
+    font-size: 14pt;
+    width: 100%;
 }
 
 .about-text{
-    margin-top: 150px;
-    width: 60%;
+    margin-right: 200px;
+    width: 40%;
     float: right;
-   font-family: "Helvetica Neue, Arial";
-   color: black;
+   font-family: "Helvetica Neue";
+   font-size: 14pt;
+   font-weight: 400;
+  /*color: #8d8d8d;  */
+  color: grey;
 
 }
 
 .about-text h1{
     display: inline-block;
     margin-top: 0px;
-    font-family: Helvetica Neue;
+    font-family: "Helvetica Neue";
 }
 
 .about-text-2{
@@ -536,5 +682,5 @@ footer li{
 }
  
 a{
-    color: black;
+    color: grey;
 }
