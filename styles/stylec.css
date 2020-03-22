@@ -1,3 +1,6 @@
+*{
+    -webkit-font-smoothing: antialiased;
+}  
 /*nav bar*/
 
 /* Add a black background color to the top navigation */
@@ -93,6 +96,11 @@ ul a {
     font-size: 10pt;
     color: grey;
 }
+
+.font-black{
+    color: black;
+}
+
 /*
 ul a:active {
     color: black;
@@ -111,9 +119,7 @@ nav li {
 }
 
 
-.font-black{
-    color: black;
-}
+
 
 
 nav ul {
@@ -184,6 +190,23 @@ p {
     margin-right: 30px;
      transform: rotateY(180deg) rotate(-10deg);
 }
+
+
+#me3 {
+    width: 110px;
+    height: auto;
+  /* text-align: center;*/
+  /*display: inline-block;*/
+  /*display: block;
+  margin-left: 48%;
+  margin-right: auto;*/
+  float:left;
+    /*vertical-align: middle;*/
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
 
 
 #jessie {
@@ -394,7 +417,7 @@ p {
 /* Add a black background color to the top navigation */
 footer {
     font-family:  "Helvetica Neue";
-    margin-top: 500px;
+    margin-top: 530px;
     bottom: 0;
     padding-left: 100px;
   /* background-color: #f2f3f5;*/
@@ -464,147 +487,6 @@ footer li{
 
 */
 
-/*works specific page*/
-.spec-title-img{
-    padding-top: 30px;
-    width: 100%;
-
-}
-
-.spec-button{
-    margin-left: 200px;
-    margin-top: 100px;
-
-}
-
-.spec-name{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    font-family: 'Helvetica Neue';
-}
-
-.spec-text{
-    margin-left: 300px; 
-    margin-right: 300px;
-    font-family: "Helvetica Neue";
-    font-weight: 300;
-}
-
-.spec-title{
-    font-size: 22pt;
-    margin-bottom: 15px;
-    margin-top: 50px;
-    font-weight: 400;
-    font-family: "Helvetica Neue";
-}
-
-.spec-overview-title {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-family: "Helvetica Neue";
-
-}
-
-.spec-overview{
-    font-weight: 300;
-}
-
-.line-before{
-    margin-top: 10px;
-}
-
-.spec-col{
-    margin-top: 20px;
-    width: 45%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.spec-result{
-    background-color: #f2f3f5;
-    margin-left: -300px;
-    margin-right: -300px;
-}
-
-.spec-result-title {
-    margin-top: 50px;
-    padding-top: 50px;
-    text-align: center;
-    font-size: 22pt;
-    font-family: "Helvetica Neue";
-    font-weight: 500;
-}
-
-.spec-proto{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.tab{
-    margin-left: 20px;
-}
-
-.strong{
-    font-weight: bold;
-}
-
-.key {
-    font-size: 14pt;
-    font-weight: 500;
-    color: #0f4c81;
-}
-
-.key-emoji {
-    font-size: 20pt;
-}
-
-.no-line-after{
-    margin-top: -10px;
-}
-
-.spec-small-title {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-family: "Helvetica Neue";
-    font-weight: 400;
-    font-size: 16pt;
-}
-
-.spec-img {
-    margin-top: 10px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.spec-img2{
-    margin-top: 10px;
-    width: 45%;
-    height: auto;
-    margin-bottom: 10px;
-    margin-left: 0px;
-}
-
-.center{
-    text-align: center;
-}
-
-.spec-img-80 {
-    height: 80%;
-}
-
-.scroll-button{
-    width: 100%;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-.scroll-button a{
-    text-align: center;
-}
-
 
 /*about*/
 
@@ -612,16 +494,20 @@ footer li{
     margin-left: 200px;
     margin-right: 200px;
     /*margin-top: 280px;*/
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 .about-img{
-    width: 30%;
+    width: 25%;
     float: left;
     margin-top: 20px;
     vertical-align: middle;
     margin-left: 200px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+
 }
+
+
 
 #me2 {
     width: 100px;
@@ -639,19 +525,22 @@ footer li{
 }
 
 .about-desc{
-    font-size: 14pt;
-    width: 100%;
+    color:black;
+    margin-top: 0px;
+    font-weight: 600;
+    margin-left: 200px;
 }
 
 .about-text{
     margin-right: 200px;
-    width: 40%;
+    width: 45%;
     float: right;
    font-family: "Helvetica Neue";
-   font-size: 14pt;
    font-weight: 400;
-  /*color: #8d8d8d;  */
-  color: grey;
+  /*  color: #8d8d8d;  */
+  color: gray;
+  font-size: 14pt;
+  line-height: 1.5;
 
 }
 
@@ -682,5 +571,5 @@ footer li{
 }
  
 a{
-    color: grey;
+    color:gray;
 }
