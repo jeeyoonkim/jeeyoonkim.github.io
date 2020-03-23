@@ -65,6 +65,15 @@
     animation-fill-mode: both;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+#jessiekim:hover span{
+    visibility: visible;
+
+}
+
 
 /**
  * cssanimation.css
