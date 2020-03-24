@@ -11,8 +11,8 @@
 }
 
 .header-image{
-    margin-top: 123px;
-    height: 90vh;
+   /* margin-top: 123px;*/ 
+    height: 100vh;
     background-color: #4e598c;
 
 }
@@ -58,25 +58,20 @@
 
 /*overview*/
 
-#overview {
-    height: 50px;
-}
-
 .overview{
-    margin-top: 180px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     height: 70vh;
     font-size: 14pt;
     margin-bottom: 0px;
-
 }
 
 .overview-title{
     font-size: 30pt;
     font-weight: 600;
     line-height: 1.0;
-    margin-top: 220px;
+   /* margin-top: 220px;*/
+   margin-top: 120px;
     margin-bottom: 30px;
     letter-spacing: -0.03em;
 }
@@ -100,17 +95,17 @@
     margin-top: 10px;
     margin-bottom: 50px;
     font-size: 12pt;
-
 }
 
 #overview-notice-emoji{
-    margin-top: 70px;
+    margin-top: 50px;
     display: inline-block;
     width: 5px;
     font-size: 12pt;
 }
 
 .overview-notice {
+    width: 90%;
     display: inline-block;
     vertical-align: text-top;
     font-style: italic;
@@ -128,8 +123,8 @@
 
 /*body*/
 .body{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-bottom: 100px;
     margin-top: 100px;
     font-size: 14pt;
@@ -140,6 +135,7 @@
     margin-bottom: 30px;
     letter-spacing: 0.1em;
     font-weight: 600;
+    font-size: 11pt;
 }
 
 .body-contents {
@@ -156,7 +152,7 @@
 
 
 .body-quote{
-    width: 70%;
+    width: 85%;
     vertical-align: text-top;
     font-style: italic;
     font-size: 13pt;

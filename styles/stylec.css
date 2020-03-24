@@ -6,12 +6,12 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 /*nav bar*/
 
 /* Add a black background color to the top navigation */
 .nav {
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     top: 0;
     padding-left: 100px;
@@ -20,6 +20,7 @@ html {
     padding-bottom: 30px;
     border-bottom: 2px solid #f2f3f5;
     z-index: 1000000;
+    height: 50px; /*not fixed*/
 }
 
 /* Style the links inside the navigation bar */
