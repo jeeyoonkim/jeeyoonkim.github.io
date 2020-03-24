@@ -194,10 +194,8 @@ p {
 
 /* hi! */
 #hi {
-    margin-top: 280px;
-  /*  margin-left: 100px;
-    margin-right: 100px;*/
-  /* text-align: center;*/
+    /*margin-top: 280px;*/
+    margin-top: 120px;
    margin-bottom: 0px;
    margin-left: 200px;
    margin-right: 200px;
@@ -527,7 +525,7 @@ footer li{
     margin-left: 200px;
     margin-right: 200px;
     /*margin-top: 280px;*/
-    margin-top: 180px;
+    margin-top: 70px;
 }
 
 .about-img{
