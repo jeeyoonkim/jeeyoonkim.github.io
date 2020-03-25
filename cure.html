@@ -6,7 +6,36 @@
         <title> Jessie Kim</title>
         <link rel="stylesheet" type="text/css" href="styles/stylec.css" media="all">
         <link rel="stylesheet" type="text/css" href="styles/style-spec.css" media="all">
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            showSlides(1);
 
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
 </head>
 
 <header>
@@ -26,7 +55,7 @@
     <div class="header-image"> 
         <p class="top header-button work-text">CURE App Concept</p>
         <p class="header-button font-small">Product Thinking • Product Design</p > </span> 
-        <img class="img-width-100 header-img  cssanimation fadeInBottom " src="image/cure/curemockup11_ 1.png">
+        <img class="img-width-100 header-img  cssanimation fadeInBottom " src="image/cure/curemockup11_1.png">
         <a href="#main"><img id="scroll-button" class="bounce" src="image/cure/Frame5px.png"></a>
     </div>
 
@@ -35,47 +64,182 @@
     
     <!--overview-->
     <div class="overview"> 
-        <p class="overview-title">CURE consolidates space reservation systems of Cornell University and eases the reservation process. </p>
-        <p class="overview-subtitle">Cornell University has three different space reservation systems that allow users to reserve various spaces and rooms in Ithaca campus. Reserving process should be concise and fast, not overwhelming. Users reserve and wait for reservation confirmation without any confidence. CURE (Cornell University Reservation Express) consolidates three existing systems and simplifies the reservation process for more delightful reservation experience. </p>
+        <p class="overview-title">CURE consolidates space reservation systems of <br>Cornell University and eases the reservation process. </p>
+        <p class="overview-subtitle">Cornell University's three different space reservation systems allow users to reserve various spaces and rooms in Ithaca campus. Reserving process should be concise and fast, not overwhelming. Users reserve and wait for reservation confirmation without any confidence. CURE(Cornell University Reservation Express) consolidates three existing systems and simplifies the reservation process for more delightful reservation experience. </p>
         
-        <p class="overview-category">Role: Product Manager, Product Designer </p>
+        <p class="overview-category">Role: Product Manager & Product Designer </p>
         <p class="overview-category">Team: 3 Product Managers  </p>
         <p class="overview-category">Period: Nov 2019 - Feb 2020 </p>
         <p class="overview-category-result">Result: iOS Application Prototype </p>
         
         <p id="overview-notice-emoji" >⚠️ </p>
-        <p class="tab overview-notice">Product thinking& management was done in a team environment within 8-week Product Development course. After the course, I developed iOS application prototype as an individual project. </p>
+        <p class="tab overview-notice">Product thinking & management was done in a team environment within 8-week Product Development course. After the course, I developed iOS application prototype as an individual project. </p>
     </div>
 
     <!--mockup image1-->
-    <img class="img-width-100 margin-bottom-50" src="image/cure/curemockup9_ 1.png">
 
-    <!--people problem-->
+    <div class="video"> 
+        <video width="800px" controls muted > 
+            <source src="image/cure/cure cure cure 2.mov" type="video/mp4">
+          </video>
+    </div>
+
+    <!--people problem & target audience-->
     <div class="body"> 
-        <p class="body-small-title">PEOPLE PROBLEM</p>
-        <p class="body-contents">As an active member of various clubs in Cornell, I want to reserve a space for club activities, but I cannot because current room reservation solutions are difficult to use; instructions and policies are hard to find; and confirmation for the space requests takes too long.</p>
-        <p class="body-contents">Target audience: Cornell University students who want to reserve a room, especially for club officers. 
-        </p>
+        <div class=" column-first column-big"> 
+            <p class="body-small-title">PEOPLE PROBLEM</p>
+            <p class="body-contents">As an active member of various clubs in Cornell, <br> I want to reserve a space for club activities, but I cannot because current room reservation solutions are difficult to use; instructions and policies are hard to find; and confirmation for the space requests takes too long.</ p>
+        </div>
+
+        <div class="column-small"> 
+            <p class="body-small-title ">TARGET AUDIENCE</p>
+            <p class="body-contents">Cornell University students who want to reserve a room, especially for club officers. </p>
+        </div>
     </div>
 
-    <!--overview & user research-->
+    <!--line-->
+    <div class="line"></div>
+       
+    <!---user research-->
     <div class="body">
-        <p class="body-small-title">OVERVIEW & USER RESEARCH</p>
-        <p class="body-contents body-title">Current systems handle a lot of reservable spaces, but uncertainty of responses for request and scattered instructions make users hard to reserve. </p>
-        <p class="body-contents">Three existing systems, R25, Libcal, and Cornell Spaces use different methods of reservation: submit forms, make phone calls, send emails, and attend board committee meeting. These solutions feel overwhelming and frustrating:</p>
-        <p class="tab  body-quote">"Reservation confirmation depends on how busy the staff is" , "Multiple rounds of Google search to find instructions are uncomfortable", "I once never received email back from the staff, so I had to send reminder email." and "I had to submit multiple forms and emails again because the space was not available for that time." </p>
-        <p class="body-contents"> There is no confidence that a space is available, no guideline what to include for reservation requests, and emails are hard to track. A <strong>streamlined reservation system</strong> with <strong>communication channel</strong> will provide users more defined reservation process and understanding of status of their requests. </p>
+        <p class="body-small-title">USER RESEARCH</p>
+        <p class="body-contents body-title">Scattered instructions, interface, and no guarantee for reservation confirmation make users hard to reserve. </p>
+        <p class="body-contents">Three existing systems, R25, Libcal, and Cornell Spaces handle a lot of reservable spaces through different methods of reservation: submit forms, make phone calls, send emails, and attend board committee meeting. These solutions feel overwhelming and frustrating:</p>
+        <p class="body-quote">"Reservation confirmation depends on how busy the staff is" & "Multiple rounds of Google search to find instructions are uncomfortable" & "I had to submit multiple forms and emails again because the space was not available for the desired time." </p>
+        <p class="body-contents"> There is no confidence that a space is available, no guideline for what information to include for reservation requests, and emails are hard to track. </p> 
+    </div>
+
+    <!--current interface-->
+
+    <!-- Slideshow container -->
+    <div class="slideshow1" > 
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+
+        <div id="slide1" class="mySlides fade">
+            <img class="img-width-100" src="image/cure/cornellspaces_ 1.png" >
+            <div class="text"> <a href=" https://registrar.cornell.edu/spaces">Cornell Spaces </a> </div>
+        </div>
     
-        <div class="column">
-            <p>Facilitate Reservation Process</p>
-            <p>To ease the reservation process, users must be able to check space availabilities prior to reservation request and provide all necessary information for reservation at once to organized standard system. With clear space availabilities and form asking required information in one consolidated system, reservation experience will be much more efficient. </p>
+        <div class="mySlides fade">
+            <img class="img-width-100" src="image/cure/currentsystems_ 1.png">
+            <div class="text"> <a href="spaces.library.cornell.edu/spaces?lid=3403">Libcal </a> </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <img class="img-width-100" src="image/cure/currentsystems-02.png">
+            <div class="text"> <a href="registrar.cornell.edu/service-resources/event-scheduling">R25 </a> </div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"> <img class="width-20" src="image/cure/Frame 2.png"> </a>
+        <a class="next" onclick="plusSlides(1)"> <img class="width-20" src="image/cure/Frame 2-1.png"></a>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <div class="column"> 
-            <p>Communication Channel </p>
-            <p>Users must be able to easily track status of reservation and have a unique space for  communication with responsible staff members. </p>
-        </div>
     </div>
+    <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
+</div>
+
+<div class="line margin-top-100"></div>
+
+
+
+    <!--ideation-->
+    <div class="body"> 
+        <p class="body-small-title">IDEATION</p>
+        <p class="body-title">How might we facilitate the reservation process?</p>
+        <p class="body-contents">A <strong>streamlined reservation system</strong> with <strong>communication channel</strong> will provide users more defined reservation process and understanding of status of their requests. </p>
+
+        <div class="column-big">
+            <p class="column-title">FACILITATE RESERVATION PROCESS</p>
+            <p class="column-text line-before">To ease the reservation process, users must be able to check space availabilities prior to reservation request and provide all necessary information for reservation at once to organized standard system. With clear space availabilities and form asking required information in one consolidated system, reservation experience will be much more efficient. </p>
+        </div>
+
+        <div class="column-small">
+
+            <p class="column-title">COMMUNICATION CHANNEL</p>
+            <p class="column-text line-before">Users must be able to easily track status of reservation and have a unique space for communication with responsible staff members. </p>
+        </div>
+    </div> 
+
+    <!--ideation view more-->
+    <div class="body">
+
+    <details>
+        <summary class="summary-title">View full ideation process</summary>
+             <p> First of all, we wrote down and made an affinity diagram on what to improve from the current reservation system:</p>
+            <img class="line-before img-width-100" src="image/cure/affinity.jpg">
+            <p class="line-before line-after"> After exploring, we focused on: </p>
+            <p>1. Facilitate reservation process - How can we unify different reservation methods?</p>
+            <p>2. Develop communication channel - How can we reduce the number of emails to schedule a reservation and keep track the process?</p>
+           
+            <p class="line-before line-after"> <strong> 1. Facilitate Reservation Process</strong></p>
+            <p class="line-after">Main objective: The reservation process is more defined for users.</p>
+            <p>From the user interviews, we confirmed that users preferred clearly guided forms asking for all the necessary information to emails as a means of reserving room. Our product will have a “form” that will be delivered to the responsible staff member. By combining the contact lists into a unified form on a single website, we seek to provide users with an organized standard webpage.</p>
+            <p class="line-before">Inspiration: R25 forms</p>
+            <img class="img-width-100 line-before" src="image/cure/currentsystems-02.png">
+
+            <p class="line-before line-after"> <strong> 2. Develop Communication Channel</strong></p>
+            <p class="line-before"> <strong> 2-1. Provide information on status of room reservation</strong></p>
+            <p class="line-after">Main objective: Users get an understanding about the status of their request.</p>
+            <p>To prevent from overflowing email communication, our product will present all availabilities like Libcal. Also, each request will have icons indicating its status - for example, “received,” “pending,” and “confirmed”.</p>
+            <p class="line-before">Inspiration: Student center, Libcal, status bar like Dominos and Grubhub</p>
+            <img class="img-width-100 line-before  line-after " src="image/cure/ideation_ 1.png">
+            <p class="line-before">Cornell Student Center marks the course status with either a green circle or a blue box. Libcal shows the availability by every hour with green, yellow, and red squares.</p>
+
+            <p class="line-before"> <strong> 2-2. New communication channel between staffs and users</strong></p>
+            <p class="line-after">Instead of email, new channel like chatbot or direct message system will be incorporated within the website.</p>
+            <p class="line-before">Inspiration: Slack, Instagram Direct Messages</p>
+            <img class="line-before  line-after img-width-60" src="image/cure/ideation3_ 1.png">
+
+        </details>
+    </div>
+    
+
+
+
+     <!--line-->
+     <div class="line"></div>
+
+
+
+    <!--product overview-->
+
+
+    <div class="body"> 
+        <p class="body-small-title">PRODUCT OVERVIEW</p>
+        <p class="body-title">CURE presents space availabilities, provides reservation status, and allows direct communication with reservation staffs.</p>
+        
+        <div class="column three-column">
+            <p class="column-title">AVAILABILITY BAR</p>
+            <p class="column-text line-before">View availabilities of selected space for each half-hour. Easy to compare availabilities and reserve spaces at desired time and date. </p>
+        </div>
+
+        <div class="column three-column">
+            <p class="column-title">RESERVATION STATUS BAR</p>
+            <p class="column-text line-before">Check reservation status - whether reservation is received, being reviewed, or confirmed.  </p>
+        </div>
+
+        <div class="column three-column">
+            <p class="column-title">DIRECT MESSAGES</p>
+            <p class="column-text line-before">Communicate with reservation staff members with built in messenger.   </p>
+        </div>
+
+    </div>    
+    <img class="img-width-100" src="image/cure/curemockup3-02.png">
+
+
+
+  
+
+
 
 
 <!--footer--------------------------------------------------------------->
