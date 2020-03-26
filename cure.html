@@ -6,6 +6,7 @@
         <title> Jessie Kim</title>
         <link rel="stylesheet" type="text/css" href="styles/stylec.css" media="all">
         <link rel="stylesheet" type="text/css" href="styles/style-spec.css" media="all">
+        <script src="script/toggle.js"></script>
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -35,6 +36,17 @@
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
             }
+
+            $('#toggle-control').click(function(){
+                if($('#target').hasClass("open")){
+                    $('#target').css("display","none");
+                    $('#target').removeClass("open");
+                } else{
+                    $('#target').css("dispaly", "block");
+                    $('#target').addClass("open");
+                }
+            });
+
             </script>
 </head>
 
@@ -104,32 +116,38 @@
     <div class="body">
         <p class="body-small-title">USER RESEARCH</p>
         <p class="body-contents body-title">Scattered instructions, interface, and no guarantee for reservation confirmation make users hard to reserve. </p>
-        <p class="body-contents">Three existing systems, R25, Libcal, and Cornell Spaces handle a lot of reservable spaces through different methods of reservation: submit forms, make phone calls, send emails, and attend board committee meeting. These solutions feel overwhelming and frustrating:</p>
+        <p class="body-contents">Three existing systems, R25, Libcal, and Cornell Spaces handle a lot of reservable spaces through different methods of reservation: submiting forms, making phone calls, sending emails, and attending board committee meeting. These solutions feel overwhelming and frustrating:</p>
         <p class="body-quote">"Reservation confirmation depends on how busy the staff is" & "Multiple rounds of Google search to find instructions are uncomfortable" & "I had to submit multiple forms and emails again because the space was not available for the desired time." </p>
-        <p class="body-contents"> There is no confidence that a space is available, no guideline for what information to include for reservation requests, and emails are hard to track. </p> 
+        <p class="body-contents"> There is no confidence that a space is available to reserve for desired date and time, no guideline for what information to include for reservation requests, and emails are hard to track. </p> 
     </div>
 
     <!--current interface-->
 
     <!-- Slideshow container -->
-    <div class="slideshow1" > 
-    <div class="slideshow-container">
+    <div class=" slideshow-container">
 
     <!-- Full-width images with number and caption text -->
 
         <div id="slide1" class="mySlides fade">
-            <img class="img-width-100" src="image/cure/cornellspaces_ 1.png" >
-            <div class="text"> <a href=" https://registrar.cornell.edu/spaces">Cornell Spaces </a> </div>
+            <img class="img-width-100 margin-top-100" src="image/cure/cornellspaces_ 1.png" >
+
+            <div class="text">
+                <p class="numbertext">Current interface (screenshots taken Nov 2019)</p>
+                <a href=" https://registrar.cornell.edu/spaces">Cornell Spaces </a> </div>
         </div>
     
         <div class="mySlides fade">
             <img class="img-width-100" src="image/cure/currentsystems_ 1.png">
-            <div class="text"> <a href="spaces.library.cornell.edu/spaces?lid=3403">Libcal </a> </div>
+            <div class="text">
+                <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
+                <a href="spaces.library.cornell.edu/spaces?lid=3403">Libcal </a> </div>
         </div>
     
         <div class="mySlides fade">
-            <img class="img-width-100" src="image/cure/currentsystems-02.png">
-            <div class="text"> <a href="registrar.cornell.edu/service-resources/event-scheduling">R25 </a> </div>
+            <img class="img-width-100" src="image/cure/currentsystems-02-original.png">
+            <div class="text">
+                <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
+                <a href="registrar.cornell.edu/service-resources/event-scheduling">R25 </a> </div>
         </div>
     
         <!-- Next and previous buttons -->
@@ -144,8 +162,6 @@
         </div>
 
     </div>
-    <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
-</div>
 
 <div class="line margin-top-100"></div>
 
@@ -154,12 +170,12 @@
     <!--ideation-->
     <div class="body"> 
         <p class="body-small-title">IDEATION</p>
-        <p class="body-title">How might we facilitate the reservation process?</p>
+        <p class="body-title">How might we make reservation experience less overwhelming?</p>
         <p class="body-contents">A <strong>streamlined reservation system</strong> with <strong>communication channel</strong> will provide users more defined reservation process and understanding of status of their requests. </p>
 
         <div class="column-big">
             <p class="column-title">FACILITATE RESERVATION PROCESS</p>
-            <p class="column-text line-before">To ease the reservation process, users must be able to check space availabilities prior to reservation request and provide all necessary information for reservation at once to organized standard system. With clear space availabilities and form asking required information in one consolidated system, reservation experience will be much more efficient. </p>
+            <p class="column-text line-before">To ease the reservation process, users must be able to check space availabilities prior to the reservation request and provide all necessary information for reservation at once to organized standard system. With clear space availabilities and form asking required information in one consolidated system, reservation experience will be much more efficient. </p>
         </div>
 
         <div class="column-small">
@@ -171,37 +187,36 @@
 
     <!--ideation view more-->
     <div class="body">
-
-    <details>
-        <summary class="summary-title">View full ideation process</summary>
-             <p> First of all, we wrote down and made an affinity diagram on what to improve from the current reservation system:</p>
-            <img class="line-before img-width-100" src="image/cure/affinity.jpg">
-            <p class="line-before line-after"> After exploring, we focused on: </p>
-            <p>1. Facilitate reservation process - How can we unify different reservation methods?</p>
-            <p>2. Develop communication channel - How can we reduce the number of emails to schedule a reservation and keep track the process?</p>
+  
+            <div>
+                <input type="checkbox" id="toggle" class="unfolder"/> 
+                <label for="toggle" class="toggle-label"><span class="unfold-icon">&#9654;</span><span class="fold-icon">&#9660;</span>  View more ideation process </label>
+                          
+                <div class="fold">
+                    <div id="container"> 
+                        <p> First of all, we wrote down and made an affinity diagram on what to improve from the current reservation system:</p>
+                       <img class="line-before img-width-100 container-img" src="image/cure/affinity.jpg">
+                       <p class="line-before"> After exploring, we focused on two objectibes: facilitate reservation process, how can we unify different reservation methods? and develop communication channel, how can we reduce the number of emails to schedule a reservation and keep track the process?</p>
+                      
+                       <p class="line-before "> <strong> Facilitate reservation process</strong></p>
+                       <p>From the user interviews, we confirmed that users preferred clearly guided forms asking for all the necessary information to emails as a means of reserving room. Our product will have a “form” that will be delivered to the responsible staff member. By combining the contact lists into a unified form on a single website, we seek to provide users with an organized standard webpage. Inspiration is from R25 forms. </p>
+                       <img class="img-width-100 line-before  container-img" src="image/cure/currentsystems-02.png">
            
-            <p class="line-before line-after"> <strong> 1. Facilitate Reservation Process</strong></p>
-            <p class="line-after">Main objective: The reservation process is more defined for users.</p>
-            <p>From the user interviews, we confirmed that users preferred clearly guided forms asking for all the necessary information to emails as a means of reserving room. Our product will have a “form” that will be delivered to the responsible staff member. By combining the contact lists into a unified form on a single website, we seek to provide users with an organized standard webpage.</p>
-            <p class="line-before">Inspiration: R25 forms</p>
-            <img class="img-width-100 line-before" src="image/cure/currentsystems-02.png">
+                       <p class="line-before line-after"> <strong> Develop Communication Channel</strong></p>
+                       <div class="tab"> 
+                       <p class="line-before"> <strong>Provide information on status of room reservation</strong></p>
+                       <p>To prevent from overflowing email communication, our product will present all availabilities like Libcal. Also, each request will have icons indicating its status - for example, “received,” “pending,” and “confirmed”. Inspirations are from Cornell student center, Libcal, status bar like Dominos and Grubhub.</p>
+                       <img class="img-width-100 line-before  line-after  container-img" src="image/cure/ideation_ 1.png">
+           
+                       <p class="line-before"> <strong>New communication channel between staffs and users</strong></p>
+                       <p class="line-after">Instead of email, new channel like chatbot or direct message system will be incorporated within the website.</p>
+                    </div></div>
+                 </div>
+              </div>
 
-            <p class="line-before line-after"> <strong> 2. Develop Communication Channel</strong></p>
-            <p class="line-before"> <strong> 2-1. Provide information on status of room reservation</strong></p>
-            <p class="line-after">Main objective: Users get an understanding about the status of their request.</p>
-            <p>To prevent from overflowing email communication, our product will present all availabilities like Libcal. Also, each request will have icons indicating its status - for example, “received,” “pending,” and “confirmed”.</p>
-            <p class="line-before">Inspiration: Student center, Libcal, status bar like Dominos and Grubhub</p>
-            <img class="img-width-100 line-before  line-after " src="image/cure/ideation_ 1.png">
-            <p class="line-before">Cornell Student Center marks the course status with either a green circle or a blue box. Libcal shows the availability by every hour with green, yellow, and red squares.</p>
 
-            <p class="line-before"> <strong> 2-2. New communication channel between staffs and users</strong></p>
-            <p class="line-after">Instead of email, new channel like chatbot or direct message system will be incorporated within the website.</p>
-            <p class="line-before">Inspiration: Slack, Instagram Direct Messages</p>
-            <img class="line-before  line-after img-width-60" src="image/cure/ideation3_ 1.png">
-
-        </details>
+        </div>
     </div>
-    
 
 
 
