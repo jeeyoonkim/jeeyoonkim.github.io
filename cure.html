@@ -6,62 +6,25 @@
         <title> Jessie Kim</title>
         <link rel="stylesheet" type="text/css" href="styles/stylec.css" media="all">
         <link rel="stylesheet" type="text/css" href="styles/style-spec.css" media="all">
+
         <script src="script/toggle.js"></script>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            showSlides(1);
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-
-            $('#toggle-control').click(function(){
-                if($('#target').hasClass("open")){
-                    $('#target').css("display","none");
-                    $('#target').removeClass("open");
-                } else{
-                    $('#target').css("dispaly", "block");
-                    $('#target').addClass("open");
-                }
-            });
-
-            </script>
+        <script src="script/slideshoworiginal.js"></script>
+        
 </head>
 
 <header>
     <div class="nav"> 
         <a id="jessiekim" href="index.html"><span class="hidden">🍒</span>JESSIE KIM</a>
-            <div class="nav-right">
-                <a href="#works ">WORK</a> 
-                <a href="resume.html">RESUME</a>
-                <a href="about.html">ABOUT</a>
-            </div>
-    </div>       
+        <div class="nav-right">
+            <a href="index.html#works"> <span class="font-black"> WORK</a> </span>
+            <a href="resume.html">RESUME</a>
+             <a href="about.html" >ABOUT</a></div>
+        </div>
+</div>          
 </header>
 
 <body>
+    
 
     <!--header-->
     <div class="header-image"> 
@@ -73,7 +36,8 @@
 
     <!--main-->
     <div id="main"></div>
-    
+
+        
     <!--overview-->
     <div class="overview"> 
         <p class="overview-title">CURE consolidates space reservation systems of <br>Cornell University and eases the reservation process. </p>
@@ -121,13 +85,44 @@
         <p class="body-contents"> There is no confidence that a space is available to reserve for desired date and time, no guideline for what information to include for reservation requests, and emails are hard to track. </p> 
     </div>
 
+        
+    <div class="slideshow-container  margin-top-100">
+        <div id ="slide1" class="mySlides1 fade">
+            <img class="img-width-100" src="image/cure/cornellspaces_ 1.png" >
+            <div class="text">
+                <p class="numbertext">Current interface (screenshots taken Nov 2019)</p>
+                <a href=" https://registrar.cornell.edu/spaces">Cornell Spaces </a> 
+            </div>
+      </div>
+      
+        <div class="mySlides1 fade">
+            <img class="img-width-100 slide-img" src="image/cure/currentsystems_ 1.png">
+            <div class="text">
+                <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
+                <a href="spaces.library.cornell.edu/spaces?lid=3403">Libcal </a> </div>      
+            </div>
+      
+        <div class="mySlides1 fade">
+            <img class="img-width-100" src="image/cure/currentsystems-02-original.png">
+            <div class="text">
+                <p class="numbertext"> Current interface (screenshots taken Nov 2019)</p>
+                <a href="registrar.cornell.edu/service-resources/event-scheduling">R25 </a>
+            </div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)"><img class="width-20" src="image/cure/Frame 2.png"></a>
+        <a class="next" onclick="plusSlides(1, 0)"><img class="width-20" src="image/cure/Frame 2-1.png"></a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1,0)"></span>
+            <span class="dot" onclick="currentSlide(2,0)"></span>
+            <span class="dot" onclick="currentSlide(3,0)"></span>
+        </div>
+      </div>
+
     <!--current interface-->
-
-    <!-- Slideshow container -->
-    <div class=" slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-
+    <!--
+    <div id="slideshow1" class="slideshow-container">
         <div id="slide1" class="mySlides fade">
             <img class="img-width-100 margin-top-100" src="image/cure/cornellspaces_ 1.png" >
 
@@ -150,18 +145,16 @@
                 <a href="registrar.cornell.edu/service-resources/event-scheduling">R25 </a> </div>
         </div>
     
-        <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)"> <img class="width-20" src="image/cure/Frame 2.png"> </a>
         <a class="next" onclick="plusSlides(1)"> <img class="width-20" src="image/cure/Frame 2-1.png"></a>
     
-        <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-    </div>
+    </div> !-->
 
 <div class="line margin-top-100"></div>
 
@@ -252,35 +245,15 @@
     <div class="body">
   
         <div class="toggle2">
-            <input type="checkbox" id="toggle" class="unfolder"/> 
-            <label for="toggle" class="toggle-label"><span class="unfold-icon">&#9654;</span><span class="fold-icon">&#9660;</span>  View more ideation process </label>
-                      
-            <div class="fold">
-                <div id="container"> 
-                    <p> First of all, we wrote down and made an affinity diagram on what to improve from the current reservation system:</p>
-                   <img class="line-before img-width-100 container-img" src="image/cure/affinity.jpg">
-                   <p class="line-before"> After exploring, we focused on two objectibes: facilitate reservation process, how can we unify different reservation methods? and develop communication channel, how can we reduce the number of emails to schedule a reservation and keep track the process?</p>
-                  
-                   <p class="line-before "> <strong> Facilitate reservation process</strong></p>
-                   <p>From the user interviews, we confirmed that users preferred clearly guided forms asking for all the necessary information to emails as a means of reserving room. Our product will have a “form” that will be delivered to the responsible staff member. By combining the contact lists into a unified form on a single website, we seek to provide users with an organized standard webpage. Inspiration is from R25 forms. </p>
-                   <img class="img-width-100 line-before  container-img" src="image/cure/currentsystems-02.png">
-       
-                   <p class="line-before line-after"> <strong> Develop Communication Channel</strong></p>
-                   <div class="tab"> 
-                   <p class="line-before"> <strong>Provide information on status of room reservation</strong></p>
-                   <p>To prevent from overflowing email communication, our product will present all availabilities like Libcal. Also, each request will have icons indicating its status - for example, “received,” “pending,” and “confirmed”. Inspirations are from Cornell student center, Libcal, status bar like Dominos and Grubhub.</p>
-                   <img class="img-width-100 line-before  line-after  container-img" src="image/cure/ideation_ 1.png">
-       
-                   <p class="line-before"> <strong>New communication channel between staffs and users</strong></p>
-                   <p class="line-after">Instead of email, new channel like chatbot or direct message system will be incorporated within the website.</p>
-                </div></div>
-             </div>
-          </div>
-
-
+            <input type="checkbox" id="toggle2" class="unfolder"/> 
+            <label for="toggle2" class="toggle-label"><span class="unfold-icon">&#9654;</span><span class="fold-icon">&#9660;</span>  View high fidelity desgin explorations </label>
+           
+            
+            <div class="fold">        
+            </div>
+        </div>
     </div>
-</div>
-    <!--           <img class="img-width-100" src="image/cure/curemockup3-02.png">->  
+    <!--           <img class="img-width-100" src="image/cure/curemockup3-02.png"> -->  
 
 
 
@@ -290,15 +263,15 @@
 
 
 <!--footer--------------------------------------------------------------->
-        <footer>
-            <div class="footer"> 
-                <p>🍒2020 Jessie JeeYoon Kim</p>
-                <div class="footer-right">
-                    <a href="mailto:jk2348@cornell.edu?subject=👋🏻Hi Jessie!">Email</a> 
-                    <a href="https://www.linkedin.com/in/jessie-jeeyoon-kim-465a161a4/">LinkedIn</a>
-                </div>
-            </div>   
-    </footer>
+<footer>
+    <div class="footer"> 
+        <p>🍒2020 Jessie JeeYoon Kim</p>
+        <div class="footer-right">
+            <a href="mailto:jk2348@cornell.edu?subject=👋🏻Hi Jessie!">Email</a> 
+            <a href="https://www.linkedin.com/in/jessie-jeeyoon-kim-465a161a4/">LinkedIn</a>
+        </div>
+    </div>   
+</footer>
 
 </body>
 </html>
