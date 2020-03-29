@@ -17,6 +17,13 @@
 
 }
 
+.header-button {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
 .top{
     padding-top: 80px;
 }
@@ -40,6 +47,7 @@
     animation-name: bounce;
     animation-timing-function: ease;
 }
+
 @keyframes bounce {
     0%   { transform:       translateY(0); }
     10%  { transform:  translateY(0); }
@@ -50,11 +58,6 @@
     100% { transform:    translateY(0); }
 }
 
-.header-button {
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
 
 /*overview*/
 
