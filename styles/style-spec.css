@@ -573,9 +573,14 @@ summary{
     margin-top: 150px;
 }
 
+.reflection {
+    margin-bottom: 100px;
+}
+
 .reflection p {
     font-size: 12pt;
 }
+
 .spec-footer{
     vertical-align: middle;
     background-color: #4e598c;
