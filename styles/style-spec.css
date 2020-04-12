@@ -94,10 +94,14 @@
     letter-spacing: -0.03em;
 }
 
+/*
 .overview-subtitle{
     padding-bottom: 50px;
-}
+}*/
 
+.gray{
+    color: gray;
+}
 .overview-category{
     display: inline-block;
     width: relative;
@@ -112,7 +116,7 @@
     width: relative;
     margin-right: 1%;
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 12pt;
     color: gray;
 }
@@ -137,6 +141,9 @@
 }
 
 /*necessary*/
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
 .margin-top-100{
     margin-top: 100px;
 }
@@ -563,7 +570,7 @@ summary{
 }
 
 .margin-top-150 {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .reflection p {
@@ -573,4 +580,12 @@ summary{
     vertical-align: middle;
     background-color: #4e598c;
     padding-bottom: 80px;
+}
+
+.margin-top-200 {
+    margin-top: 300px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
 }
