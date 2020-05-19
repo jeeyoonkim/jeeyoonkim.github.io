@@ -110,7 +110,7 @@
 .overview-category{
     display: inline-block;
     width: relative;
-    margin-right: 1%;
+    margin-right: 5%;
     font-size: 10pt;
     color: gray;
    font-family: 'Roboto Mono', monospace;
@@ -276,6 +276,7 @@
 
 .column-text{
     width: 90%;
+    padding-bottom: 50px;
 }
 
 .three-column {
@@ -283,7 +284,7 @@
 }
 
 .four-column {
-    width: 24%;
+    width: 40%;
 }
 
 .column-big {
@@ -549,7 +550,7 @@ summary{
 
 .po-vid {
     display: inline-block;
-    width: 20%;
+    width: 30%;
     vertical-align: top;
     margin-top: 65px;
 }
@@ -557,7 +558,7 @@ summary{
 
 .po-text{
     display: inline-block;
-    width: 74%;
+    width: 64%;
     margin-right: 3%;
 }
 
@@ -585,10 +586,6 @@ summary{
 
 .reflection {
     margin-bottom: 100px;
-}
-
-.reflection p {
-    font-size: 12pt;
 }
 
 .spec-footer{
