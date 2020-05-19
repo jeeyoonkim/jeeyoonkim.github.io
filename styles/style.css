@@ -1,0 +1,403 @@
+
+/*nav bar-----------------------------------------------------------------------*/
+
+/* Add a black background color to the top navigation */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-left: 100px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f2f3f5;
+    z-index: 1000000;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Helvetica Neue"; 
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 11pt;
+
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.nav-right {
+  float: right;
+  padding-right: 200px;
+  
+}
+
+.nav-right a{
+    font-weight: 500;
+    color:#a3a3a3;
+    letter-spacing: 0.01em;
+    font-size: 10pt;
+
+}
+
+/**
+ * cssanimation.css
+ * https://www.cssanimatio.io
+ * Created and maintained by: Pavel
+ * Find me at: https://www.linkedin.com/in/yesiamrocks/
+ * Email: hello@cssanimation.io
+ * Github: https://github.com/yesiamrocks/cssanimation.io
+ * Title: A CSS Animation Library for Developers and Ninjas
+ * Copyright (c) 2017 Pavel
+ * License: cssanimation.io is licensed under the MIT license
+ **/
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to { opacity: 1 }
+}
+
+
+ul a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 10pt;
+    color: grey;
+}
+
+/*END nav bar-----------------------------------------------------------------------*/
+
+/*
+ul a:active {
+    color: black;
+}
+
+ul a:hover {
+    color: black;
+}
+
+
+nav li {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+
+.font-black{
+    color: black;
+}
+
+
+nav ul {
+    padding-left: 0;
+    width: 320px;
+    padding-right: 390px;
+    list-style: none;
+    text-decoration: none; 
+    background-color: white;
+    float: right;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+}
+
+.nav-current{
+    color: black;
+
+}
+*/
+
+/*body-----------------------------------------------------------------*/
+body{
+    font-family: "Helvetica Neue"; 
+    font-size: 12pt;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* hi! --------------------------------------------------------------------- */
+#hi {
+    height: 70vh;
+    margin-top: 250px;
+  /*  margin-left: 100px;
+    margin-right: 100px;*/
+   text-align: center;
+}
+
+
+
+#me {
+    width: 80px;
+    height: auto;
+   text-align: center;
+  /*display: inline-block;*/
+  display: block;
+  margin-right: auto;
+    /*vertical-align: middle;*/
+    margin-top: -50px;
+    margin-bottom: 20px;
+    margin-left: 26%;
+  transform: rotateY(180deg) rotate(-10deg);
+
+}
+
+#jessie {
+    font-weight: 600;
+    color: black;
+    font-size: 25pt;
+}
+
+#hi-h1{
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 18pt;
+
+}
+
+.hi-desc{
+    width: 50%;
+    margin-left: 30px;
+    font-size: 2pt;
+    margin-bottom: 0px;
+    font-weight: 50;
+    font-weight: 400;
+    color: #8d8d8d;   
+    display: inline-block;
+    text-align: left;
+}
+
+.button-box{
+   /* margin-top: -10px;*/
+}
+
+.button{ 
+    font-size: 9pt;
+    width: auto;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.button a{
+    text-decoration: none;
+    color:#0f4c81;
+    padding: 5px 10px 5px 0px;
+
+}
+
+.button a:hover{
+    color: #ffffff;
+    background-color: #0f4c81;
+    padding-left: 10px;
+}
+
+/* END hi! ------------------------------------------------------- */
+
+/*work*/
+#works{
+    height: 100px;
+}
+
+.work {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#projects{
+    font-weight: 500;
+    font-family: "Helvetica Neue";
+    color:black;
+    margin-bottom: 20px;
+}
+
+.work-image{
+    width: 30%;
+    margin-right: 3%;
+    margin-left: 0px;
+    padding: 0px;
+}
+/*works-before
+.work {
+    margin-left: 100px;
+    padding-bottom: 500px;
+    display: float;
+    margin-right: 100px;
+    align-items: center;   
+    font-family: "Helvetica Neue";
+
+}
+
+.work-text{
+    width: 70%;
+    float: right;
+}
+
+
+.work h1{
+    font-size: 20pt;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.work-desc{
+    font-family: "Helvetica Neue";
+}
+
+.work-date {
+    font-size: 10pt;
+    color: grey;
+    padding-bottom: 10px;
+
+}
+.work-title {
+    color: grey;
+}
+
+.work-button {
+    margin-top: 20px;
+}
+
+.work-image {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.work-img{
+    width: 100%;
+}
+
+.line-after{
+    padding-bottom: 10px;
+}
+
+*/
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #f2f3f5;
+    padding-top:  30px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
+    display: block;
+    margin-top: 100px;
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+    text-align: center; 
+}
+
+footer p {
+    padding-top: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    padding-right: 30px;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+/*about*/
+
+.about {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.about-img{
+    width: 35%;
+    float: left;
+    vertical-align: middle;
+    margin-top: 150px;
+}
+
+.about-text{
+    margin-top: 150px;
+    width: 60%;
+    float: right;
+   font-family: "Helvetica Neue, Arial";
+   color: black;
+
+}
+
+.about-text h1{
+    display: inline-block;
+    margin-top: 0px;
+    font-family: Helvetica Neue;
+}
+
+.about-text-2{
+    padding-top: 550px;
+    font-family: "Helvetica Neue";
+}
+
+.blue{
+    color: #0f4c81;
+    font-weight: 500;
+}
+
+.red{
+    color: #B31B1B;
+    font-weight: 400;
+}
+
+.tab-2 {
+    margin-top: -30px;
+    margin-left: 30px;
+}
+ 
+a{
+    color: black;
+}
