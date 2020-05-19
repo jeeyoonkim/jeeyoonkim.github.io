@@ -1,6 +1,11 @@
 *{
     -webkit-font-smoothing: antialiased;
     font-family: "Helvetica Neue"; 
+    letter-spacing: 0.001em;
+    color: #191919;
+    line-height: 1.5;
+    font-size: 14pt;
+
 }  
 
 /*header*/
@@ -8,7 +13,6 @@
 .img-width-100 {
     width: 100%;
     height: auto;
-    
 
 }
 
@@ -87,27 +91,29 @@
 }
 
 .overview-title{
-    font-size: 25pt;
+    font-size: 35pt;
     font-weight: 600;
-   /* margin-top: 220px;*/
     padding-bottom: 50px;
-    letter-spacing: -0.03em;
+    line-height: 1.2;
 }
 
-/*
+
 .overview-subtitle{
-    padding-bottom: 50px;
-}*/
+    font-size: 14pt;
+
+}
 
 .gray{
     color: gray;
 }
+
 .overview-category{
     display: inline-block;
     width: relative;
     margin-right: 1%;
-    font-size: 12pt;
+    font-size: 10pt;
     color: gray;
+   font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -117,22 +123,20 @@
     margin-right: 1%;
     padding-top: 10px;
     padding-bottom: 30px;
-    font-size: 12pt;
-    color: gray;
+    font-size: 10pt;
 }
 
 #overview-notice-emoji{
-    padding-top: 50px;
+    margin-top: 50px;
     display: inline-block;
     width: 5px;
     font-size: 12pt;
 }
 
 .overview-notice {
-    width: 90%;
     display: inline-block;
     vertical-align: text-top;
-    font-style: italic;
+    padding-top: 100px;
     font-size: 12pt;
 }
 
@@ -199,6 +203,11 @@
     margin-top: 20px;
 }
 
+.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;}
+
 
 /*body*/
 .body{
@@ -215,9 +224,11 @@
 .body-small-title{
     margin-top: 50px;
     margin-bottom: 30px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
     font-size: 11pt;
+    letter-spacing: 0.05em;
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
 }
 
 .body-contents {
@@ -228,12 +239,11 @@
     font-size: 25pt;
     font-weight: 600;
     margin-bottom: 50px;
-    letter-spacing: -0.03em;
 }
 
 .body-quote{
     vertical-align: text-top;
-    font-style: italic;
+   /* font-style: italic;*/
     font-size: 13pt;
     margin-bottom: 10px;
     /*margin-bottom: 50px;*/
@@ -260,8 +270,8 @@
 .column-title {
     letter-spacing: 0.1em;
     font-weight: 600;
-    font-size: 11pt;
     height: 34px;
+   /* text-transform: uppercase; */
 }
 
 .column-text{
