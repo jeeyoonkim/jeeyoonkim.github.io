@@ -283,7 +283,7 @@
 }
 
 .four-column {
-    width: 40%;
+    width: 48%;
 }
 
 .column-big {
@@ -555,11 +555,12 @@ summary{
 }
 
 
+/*
 .po-text{
     display: inline-block;
     width: 64%;
     margin-right: 3%;
-}
+}*/
 
 
 .full-prototype{
