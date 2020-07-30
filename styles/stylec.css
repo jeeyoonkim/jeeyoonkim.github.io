@@ -319,15 +319,48 @@ p {
 }
 
 
+.work-row1 {
+    margin-bottom: 5%;
+}
+
 /* needed for each box */
+
+.loreal-back{
+    background-color: #ffffff;
+    border-radius: 1%;
+}
+
+.loreal-box:hover div{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 1%;
+
+}
+
+
+.dep-back{
+    background-color: #f7e3eb;
+    border-radius: 1%;
+}
+
+.dep-box:hover div{
+    background-color: #f7e3eb;
+    color: black;
+    border-radius: 1%;
+
+}
+
+
 .insta-back{
-    background-color: #f2f3f5;
+    background-color: #F9F9F9;
     border-radius: 1%;
 
 }
 .insta-box:hover div{
     background-color: #f2f3f5;
     color: black;
+    border-radius: 1%;
+
 }
 
 .cure-back {
@@ -336,7 +369,9 @@ p {
 
 }
 .cure-box:hover .work-overlay {
-    background-color: #4e598c;    
+    background-color: #4e598c; 
+    border-radius: 1%;
+   
 }
 
 
@@ -344,8 +379,8 @@ p {
 footer {
     font-family:  "Helvetica Neue";
     bottom: 0;
-    padding-left: 100px;
-    padding-top: 30px;
+    padding-left: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
     display: block;
 }
