@@ -113,6 +113,15 @@
     padding-top: 200px;
 }
 
+.overview2{
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 50vh;
+    font-size: 14pt;
+    vertical-align: middle;
+    padding-top: 200px;
+}
+
 .overview-title{
     font-size: 35pt;
     font-weight: 600;
