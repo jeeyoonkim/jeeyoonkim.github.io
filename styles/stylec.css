@@ -222,13 +222,12 @@ p {
 /*work*/
 #works{
     height: 100px;
-   margin-bottom: 100px;
 }
 
 .work {
     margin-left: 200px;
     margin-right: 200px;
-    height: 80vh;
+    height: 60vh;
 }
 
 
@@ -378,10 +377,11 @@ p {
 /*footer*/
 footer {
     font-family:  "Helvetica Neue";
-    bottom: 0;
     padding-left: 50px;
     padding-top: 100px;
     padding-bottom: 30px;
+    bottom: 0;
+    margin-top: 300px;
     display: block;
 }
 
