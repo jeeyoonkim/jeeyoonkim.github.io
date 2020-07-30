@@ -254,6 +254,8 @@ p {
     display: inline-block;
     width: 100%;
     height: 100%;
+    border-radius: 1%;
+
   }
 
 .work-overlay {
@@ -320,6 +322,8 @@ p {
 /* needed for each box */
 .insta-back{
     background-color: #f2f3f5;
+    border-radius: 1%;
+
 }
 .insta-box:hover div{
     background-color: #f2f3f5;
@@ -328,6 +332,8 @@ p {
 
 .cure-back {
     background-color: #4e598c;
+    border-radius: 1%;
+
 }
 .cure-box:hover .work-overlay {
     background-color: #4e598c;    
