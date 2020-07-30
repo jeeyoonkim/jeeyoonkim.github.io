@@ -1,6 +1,7 @@
 *{
-    -webkit-font-smoothing: antialiased;
-    font-family: "Helvetica Neue"; 
+    /*-webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue"; */
+    font-family: "Arial,sans-serif"
 }  
 
 html {
@@ -156,9 +157,10 @@ p {
 /* hello */
 
 .hello {
-    margin-top: 120px;
+    margin-top: 200px;
     margin-left: 200px;
     margin-right: 200px;
+    height: 80vh;
 }
 
 #hello-image{
@@ -173,19 +175,38 @@ p {
 }
 .hello-text{
     display: inline-block;
+    margin-top: 6%;
     width: 85%;
 }
 
 #hello-jessie {
     font-size: 30pt;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #hello-desc{
     width: 85%;
-    font-size: 18pt;
-    font-weight: 400;
-    color: grey;
+    font-size: 20pt;
+    color: #7c7c7c;
+    margin-top: 1%;
+}
+
+#grey {
+    color: #7c7c7c;
+
+}
+.sub-text {
+    margin-top: 10%;
+    color: #7c7c7c;
+    font-size: 16pt;
+
+}
+
+#seek {
+    margin-top: 5%;
+    font-size: 11pt;
+    color: #7c7c7c;
+
 }
 
 /*work*/
