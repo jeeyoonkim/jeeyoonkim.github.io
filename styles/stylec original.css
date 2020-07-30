@@ -40,27 +40,25 @@ html {
 .nav {
     width: 100%;
     top: 0;
-   /* background-color: white;*/
-    padding-top: 10px;
-    padding-bottom: 20px;
-  /*  border-bottom: 2px solid #f2f3f5;*/ 
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f2f3f5;
     z-index: 1000000;
     height:50px; 
-    position: fixed;
 }
 
 .nav a {
   float: left;
   color: black;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
   font-family: "Helvetica Neue"; 
   font-weight: 600;
   letter-spacing: 0.1em;
-}
+  font-size: 10pt;
 
-.margin-nav {
-    padding: 16px 20px;
 }
 
 .nav a:hover {
@@ -73,14 +71,16 @@ html {
 
 .nav-right {
   float: right;
-  margin-right: 50px;
+  margin-right: 100px;
   
 }
 
 .nav-right a{
     font-weight: 500;
     color:#a3a3a3;
-    letter-spacing: 0.01em;    
+    letter-spacing: 0.01em;
+    font-size: 10pt;
+    
 }
 
 .hidden {
@@ -88,9 +88,7 @@ html {
 }
 
 #jessiekim {
-    margin-left: 50px;
-    font-size: 25pt;
-    margin-top: 6px;
+    margin-left: 100px;
 }
 
 #jessiekim:hover span{
