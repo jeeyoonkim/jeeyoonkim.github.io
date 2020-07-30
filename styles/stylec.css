@@ -415,6 +415,13 @@ footer p {
 
 /*--------------------------*/
 /*about.html*/
+
+.about {
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+        height: 50vh;
+}
 .about-box {
     height: 80vh;
     margin-left: 200px;
@@ -431,20 +438,34 @@ footer p {
 }
 
 .about-image {
-    width: 35%;
+    width: 30%;
     display: inline-block;
-    vertical-align: top;
     margin-right: 2%;
+    vertical-align: top;
+    margin-top: 100px;
 }
 
 .about-text {
-    width: 55%;
+    width: 65%;
     display: inline-block;
     font-size: 14pt;
     color: gray;
+    vertical-align: middle;
 }
 
 a{
     color:gray;
 }
 
+#hello-desc-about {
+    font-size: 20pt;
+    color: #7c7c7c;
+    margin-top: 1%;
+}
+
+#myname {
+    margin-top: 5%;
+    color: #F06175;
+    font-size: 20pt;
+
+}
