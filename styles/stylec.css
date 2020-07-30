@@ -191,6 +191,18 @@ p {
     margin-top: 1%;
 }
 
+#emph {
+    color: #F06175;
+    font-size: 20pt;
+}
+#emph2 {
+    color: #F06175;
+}
+
+#font-20 {
+    font-size: 20pt;
+}
+
 #grey {
     color: #7c7c7c;
 
@@ -198,8 +210,6 @@ p {
 .sub-text {
     margin-top: 10%;
     color: #7c7c7c;
-    font-size: 16pt;
-
 }
 
 #seek {
