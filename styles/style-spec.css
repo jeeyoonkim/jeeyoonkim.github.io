@@ -21,6 +21,16 @@
 
 }
 
+
+.header-image2{
+    /* margin-top: 123px;*/ 
+     height: 100vh;
+     background-color: #F8E4EC;
+ 
+ }
+ 
+
+
 .header-button {
     text-align: center;
     color: white;
@@ -28,10 +38,25 @@
     font-size: 18pt;
 }
 
+
+.header-button2 {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 18pt;
+}
 .top{
     padding-top: 80px;
+    
 }
 
+
+.top2{
+    padding-top: 80px;
+    color: black;
+
+    
+}
 .header-img{
     padding-top: 50px;
     padding-bottom: 60px;
