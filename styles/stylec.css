@@ -1,7 +1,7 @@
 *{
     /*-webkit-font-smoothing: antialiased;
     font-family: "Helvetica Neue"; */
-    font-family: "Arial,sans-serif"
+    font-family: "Arial,sans-serif";
 }  
 
 html {
@@ -55,8 +55,8 @@ html {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-family: "Helvetica Neue"; 
-  font-weight: 600;
+  font-family: "Arial, sans-serif";
+font-weight: 600;
   letter-spacing: 0.1em;
 }
 
@@ -142,8 +142,8 @@ ul a {
 
 /*body*/
 body{
-    font-family: "Helvetica Neue"; 
-    font-size: 12pt;
+    font-family: "Arial, sans-serif";
+        font-size: 12pt;
     padding: 0px;
     margin: 0px;
 }
