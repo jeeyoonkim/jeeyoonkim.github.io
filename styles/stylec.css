@@ -1,6 +1,6 @@
 *{
     /*-webkit-font-smoothing: antialiased;*/
-    font-family: "Arial,sans-serif";
+    font-family: "Arial";
 }  
 
 html {
@@ -54,7 +54,6 @@ html {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-family: "Arial, sans-serif";
 font-weight: 600;
   letter-spacing: 0.1em;
 }
@@ -141,7 +140,6 @@ ul a {
 
 /*body*/
 body{
-    font-family: "Arial, sans-serif";
         font-size: 12pt;
     padding: 0px;
     margin: 0px;
@@ -232,7 +230,6 @@ p {
 
 #projects{
     font-weight: 500;
-    font-family: "Helvetica Neue";
     color:black;
     margin-bottom: 20px;
 }
@@ -375,7 +372,6 @@ p {
 
 /*footer*/
 footer {
-    font-family:  "Helvetica Neue";
     padding-left: 50px;
     padding-top: 100px;
     padding-bottom: 30px;
@@ -399,7 +395,6 @@ footer p {
     display: inline-block;
     width: 200px; 
     font-size: 10pt;
-    font-family: "Helvetica Neue";
     font-weight: 500;
 }
 
