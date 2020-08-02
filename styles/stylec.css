@@ -178,14 +178,17 @@ p {
 
 #hello-jessie {
     font-size: 30pt;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #hello-desc{
     width: 85%;
     font-size: 20pt;
-    color: #7c7c7c;
+    color: #c6c6c6;
     margin-top: 1%;
+    font-weight: 500;
+
+
 }
 
 #emph {
@@ -201,18 +204,18 @@ p {
 }
 
 #grey {
-    color: #7c7c7c;
+    color: #c6c6c6;
 
 }
 .sub-text {
     margin-top: 10%;
-    color: #7c7c7c;
+    color: #c6c6c6;
 }
 
 #seek {
     margin-top: 5%;
     font-size: 11pt;
-    color: #7c7c7c;
+    color: #c6c6c6;
 
 }
 
@@ -229,7 +232,7 @@ p {
 
 
 #projects{
-    font-weight: 500;
+    font-weight: 600;
     color:black;
     margin-bottom: 20px;
 }
@@ -455,6 +458,8 @@ a{
     font-size: 20pt;
     color: #7c7c7c;
     margin-top: 1%;
+    font-weight: 600;
+
 }
 
 #myname {
