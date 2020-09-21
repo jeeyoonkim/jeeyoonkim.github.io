@@ -220,7 +220,6 @@ p {
 
 #emph {
     color: #F06175;
-    font-size: 20pt;
 }
 #emph2 {
     color: #F06175;
@@ -237,6 +236,14 @@ p {
 .sub-text {
     margin-top: 10%;
     color: #c6c6c6;
+}
+
+#point {
+    color: #F06175;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 #seek {
@@ -284,7 +291,7 @@ p {
 }
 
 .text-company {
-    font-size: 17pt;
+    font-size: 14pt;
     margin-bottom: 5%;
     font-weight: 500;
 }
@@ -326,8 +333,6 @@ p {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     
-    font-weight: 600;
-    font-size: 18pt;
     color: white;
     text-align: center;
   }
