@@ -194,27 +194,17 @@ p {
     margin-right: 2%;
 }
 
-#jessie {
-    font-size: 30pt;
-}
+
 .hello-text{
     display: inline-block;
     margin-top: 6%;
     width: 85%;
 }
 
-#hello-jessie {
-    font-size: 30pt;
-    font-weight: 600;
-}
-
 #hello-desc{
     width: 85%;
-    font-size: 20pt;
     color: #c6c6c6;
     margin-top: 1%;
-    font-weight: 500;
-
 
 }
 
@@ -477,24 +467,22 @@ footer p {
 }
 
 .about-me {
-    font-size: 20pt;
     width: 500px;
     margin-bottom: 30px;
-    font-weight: 600;
 }
 
 .about-image {
-    width: 30%;
+    width: 20%;
     display: inline-block;
-    margin-right: 2%;
+    margin-right: 5%;
     vertical-align: top;
     margin-top: 100px;
 }
 
+
 .about-text {
-    width: 65%;
+    width: 60%;
     display: inline-block;
-    font-size: 14pt;
     color: gray;
     vertical-align: middle;
 }
@@ -504,16 +492,14 @@ a{
 }
 
 #hello-desc-about {
-    font-size: 20pt;
+    font-size: 14pt;
     color: #7c7c7c;
     margin-top: 1%;
-    font-weight: 600;
 
 }
 
 #myname {
     margin-top: 5%;
     color: #F06175;
-    font-size: 20pt;
 
 }
