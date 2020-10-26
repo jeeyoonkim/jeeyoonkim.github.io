@@ -42,11 +42,18 @@ html {
 
 .font-11pt{
     font-size: 11pt;
-
 }
 
 .font-12pt{
     font-size: 12pt;
+}
+
+.font-14pt{
+    font-size: 16pt;
+}
+
+.font-18pt{
+    font-size: 18pt;
 }
 
 .font-black{
@@ -62,6 +69,7 @@ html {
 .a-font-black a{
     color: black;
 }
+
 
 /*nav bar*/
 .nav {
@@ -99,7 +107,7 @@ font-weight: 600;
 
 .nav-right {
   float: right;
-  margin-right: 50px;
+  margin-right: 180px;
   
 }
 
@@ -113,8 +121,12 @@ font-weight: 600;
     visibility: hidden;
 }
 
+.white-space {
+    height: 80vh;
+}
+
 #jessiekim {
-    margin-left: 50px;
+    margin-left: 200px;
     font-size: 25pt;
     margin-top: 6px;
 }
@@ -242,6 +254,7 @@ p {
     color: #c6c6c6;
 
 }
+
 
 /*work*/
 #works{
@@ -414,7 +427,7 @@ p {
 /*footer*/
 footer {
     position: relative;
-    padding-left: 50px;
+    padding-left: 180px;
     padding-top: 100px;
     padding-bottom: 30px;
     bottom: 0;
@@ -433,21 +446,6 @@ footer a:hover{
     color: black;
 }
 
-footer p {
-    display: inline-block;
-    width: 200px; 
-    font-size: 10pt;
-    font-weight: 500;
-}
-
-.footer-right {
-  float: right;
-  margin-right: 120px;
-  padding-top: 0px;
-  margin-top: 0px;
-  font-size: 10pt;
-
-}
 
 /*--------------------------*/
 /*about.html*/
@@ -472,20 +470,32 @@ footer p {
 }
 
 .about-image {
-    width: 20%;
-    display: inline-block;
-    margin-right: 5%;
+    width: 24%;
+    margin-right: 200px;
     vertical-align: top;
-    margin-top: 100px;
+    margin-top: 140px;
+    border-radius: 1%;
+    float: right;
+    margin-right: 200px;
+        
 }
 
 
 .about-text {
-    width: 60%;
-    display: inline-block;
+    width: 56%;
+    float: left;
     color: gray;
     vertical-align: middle;
+
 }
+
+.hello2 {
+    margin-left: 200px;
+    margin-right: 120px;
+    margin-top: 150px;
+   /* height: 50vh;*/
+}
+
 
 a{
     color:gray;
