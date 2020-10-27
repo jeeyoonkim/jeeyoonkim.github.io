@@ -75,10 +75,8 @@ html {
 .nav {
     width: 100%;
     top: 0;
-   /* background-color: white;*/
     padding-top: 10px;
     padding-bottom: 20px;
-  /*  border-bottom: 2px solid #f2f3f5;*/ 
     z-index: 1000000;
     height:50px; 
     position: fixed;
@@ -87,10 +85,7 @@ html {
 .nav a {
   float: left;
   color: black;
-  text-align: center;
   text-decoration: none;
-font-weight: 600;
-  letter-spacing: 0.1em;
 }
 
 .margin-nav {
