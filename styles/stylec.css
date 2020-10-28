@@ -308,12 +308,12 @@ p {
 
   .box{
       display: inline-block;
-      width: 46%;
+      width: 48%;
       margin-bottom: 5%;
   }
 
   .margin-box {
-      width: 4%;
+      width: 3%;
       display: inline-block;
       background-color: #000000;
   }
