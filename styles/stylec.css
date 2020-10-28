@@ -529,7 +529,7 @@ footer a:hover{
 }
 
 
-/* 1200px */ 
+/* 1200px 
 @media screen and (max-width: 1200px) {
     .box {
         position: relative;
@@ -540,3 +540,4 @@ footer a:hover{
       }
      
 }
+*/ 
