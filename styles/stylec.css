@@ -97,7 +97,6 @@ html {
 }
 
 
-
 .nav a:active {
   color: black;
 }
@@ -176,7 +175,7 @@ ul a {
 
 /*body*/
 body{
-        font-size: 12pt;
+    font-size: 12pt;
     padding: 0px;
     margin: 0px;
 }
@@ -194,13 +193,13 @@ p {
     margin-left: 200px;
     margin-right: 200px;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
    /* height: 50vh;*/
    
 }
 
 #hello-image{
-    width: 40%;
+    width: 38%;
     display: inline-block;
     margin-bottom: 2%;
 }
@@ -293,6 +292,7 @@ p {
     height: auto;*/
     display: inline-block;
     margin-top: 2%;
+    width: 100%;
 }
 
 .text-company {
@@ -383,6 +383,10 @@ p {
 }
 
 
+.text-desc {
+    font-size: 10pt;
+    color: grey;
+}
 
 /* needed for each box */
 
