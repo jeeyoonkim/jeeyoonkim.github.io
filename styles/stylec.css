@@ -124,7 +124,7 @@ html {
 
 #jessiekim {
     margin-left: 200px;
-    font-size: 25pt;
+    font-size: 20pt;
     margin-top: 6px;
 }
 
@@ -190,17 +190,19 @@ p {
 /* hello */
 
 .hello {
-    margin-top: 150px;
+    margin-top: 15%;
     margin-left: 200px;
     margin-right: 200px;
+    text-align: center;
+    margin-bottom: 8%;
    /* height: 50vh;*/
+   
 }
 
 #hello-image{
-    width: 9%;
+    width: 40%;
     display: inline-block;
-    vertical-align: top;
-    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 
